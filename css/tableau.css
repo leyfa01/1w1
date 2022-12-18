@@ -1,0 +1,90 @@
+/*////////////////Section prix en général//////////////////*/
+section#tableau {
+  background-image: url(https://cdn.discordapp.com/attachments/890334722385932298/1053854856986775572/4133846.png);
+  background-color: black;
+  background-size: cover;
+}
+/*-----------------------Titre dans la section prix----------------------*/
+section#tableau h1, caption {
+  color: rgb(171, 132, 180);
+  
+}
+/*-------------------Sous-titre dans la section prix-----------------------*/
+section#tableau caption {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-shadow: 3px 3px 5px;
+  font-size: 26px;
+}
+/*-------------------le tableau en général--------------------*/
+.mon_tableau {
+  border-collapse: collapse;
+  border: 1px solid #aaa;
+}
+/*---------------Toute les case du tableau------------------*/
+.mon_tableau td,
+.mon_tableau th {
+  border: 1px solid #555;
+  padding: 20px;
+  font-size: 1rem;
+ 
+}
+/*--------------------Première case horizontale du tableau-----------------*/
+.mon_tableau th {
+  font-size: 1.2rem;
+  /*Pour rendre le fond plus foncé*/
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+/*--------------------Ligne de séparations entre 'Lieu' et 'Rang'--------------------*/
+.bottom {
+  position: absolute;
+  bottom: 1px;
+  left: 1px;
+}
+
+.top {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+}
+
+.line {
+  width: 112px;
+  height: 47px;
+  border-bottom: 1px solid white;
+  transform: scale(1.5,1.7) translateY(-20px) translateX(10px) rotate(27deg);
+  z-index: -1;
+  color: rgb(255, 255, 255);
+}
+
+.background {
+  width: 100px;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+}
+.background>div {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+/*-----------------les cases dans le tableau-----------------------*/
+.mon_tableau td {
+  background-color: rgb(247, 172, 215);
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+/*---------------------Changement de couleur dans chaque cases---------------*/
+.mon_tableau td:hover {
+  background-color: rgba(223, 107, 213, 0.788);
+  text-align: center;
+}
+/*------------------Changement de couleur dans chaque cases----------------*/
+.mon_tableau th:hover {
+  background-color: rgb(201, 135, 231);
+  text-align: center;
+}
+

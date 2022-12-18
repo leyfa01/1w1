@@ -1,0 +1,54 @@
+/*//////////////////////////Article en general///////////////////////*/
+#article {
+  background-color: rgb(240, 159, 200);
+}
+
+/*----------------------------Nom des personnes----------------------------*/  
+section#article h1#sc {
+ text-decoration: none;
+ font-size: 3rem;
+ margin-top: 0;
+ margin-bottom: 0;
+ text-shadow: none;
+ font-family: cursive;
+ text-shadow: 3px 3px 5px;
+}
+/*-------------------------Position entre les images et les titres secondaires avec leurs paragraphes----------------------------*/
+article.history1 {
+ align-content: flex-end;
+ display: flex;
+ flex-flow: row;
+ align-items: flex-start;
+ border: 4px dotted rgb(0, 0, 0);
+ border-radius: 12px;
+ margin: 10px 0 10px 0;
+
+}
+/*------------------------------- entre les images et les titres secondaires avec leurs paragraphes--------------------------*/
+article.history2 {
+  align-content: flex-end;
+  display: flex;
+  flex-flow: row-reverse;
+  align-items: flex-start;
+  border: 4px dotted rgb(0, 0, 0);
+  border-radius: 12px;
+  margin: 10px 0 10px 0;
+  }
+/*------------------------------------Titre secondaire avec les paragraphes-------------------------------- */
+div.zone {
+
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+ align-items: flex-start;
+ align-content: flex-start;
+
+}
+/*-----------------------------Paragraphe dans l'encadré --------------------------------*/
+
+section#article p{
+
+ font-family:Verdana, Geneva, Tahoma, sans-serif;
+ font-size: 1.2rem;
+ font-variant: normal;
+}

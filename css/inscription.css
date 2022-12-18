@@ -1,0 +1,54 @@
+/*//////////////////////Inscription en général/////////////////////*/
+#inscription {
+  background-color: rgb(240, 159, 200);
+}
+/*--------------Totalité du form---------*/
+form.formulaire {
+  margin-top: 150px;
+}
+/*--------------Allignement des sous-titres avec les boites de textes---------------*/
+.align1, .align2, align3, .align4, .align5 {
+  
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+/*--------------------Section genre------------------- */
+.genre {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: baseline;
+  align-content: flex-start;
+}
+/*---------------Séparation entre les lignes------------------*/
+form.formulaire div label { 
+  margin: 10px;
+}
+/*----------------Boite de texte & cochage----------------------*/
+form div input {
+  height: 20px;
+}
+/*-----------------Bouton soumettre et réinitialiser------------------*/
+#submit, #reset {
+  margin-top: 10px;
+  height: 25px;
+  width:170px;
+  color: black;
+  border-color: pink;
+  background-color: pink;
+  
+}
+/*------------------Boite de selection (Rang)-------------------*/
+section#inscription div#rang select {
+  background-color: pink;
+  color: black;
+  border: 2px solid pink;
+  border-radius: 12px;
+  box-shadow: 1px 1px;
+  font-size: 14px;
+}
+
+
+

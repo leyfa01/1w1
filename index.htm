@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="TP2 pour le cours de mise en page Web dont le thème traite de BlackPink"
+    />
+    <meta name="author" content="Leyna Feknous" />
+    <meta name="robot" />
+    <title>Tp2-etape 1</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/tableau.css" />
+    <link rel="stylesheet" href="css/inscription.css" />
+    <link rel="stylesheet" href="css/video.css" />
+    <link rel="stylesheet" href="css/galerie.css" />
+    <link rel="stylesheet" href="css/accueil.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/article.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!--nav>(a>lorem1)*5-->
+    <!--////////////////////////Menu////////////////////-->
+    <nav>
+      <a class="active" href="#accueil">Accueil</a>
+      <a class="active" href="#inscription">Inscription</a>
+      <a class="active" href="#galerie">Galerie</a>
+      <a class="active" href="#article">Histoire</a>
+      <a class="active" href="#tableau">Prix</a>
+      <a class="active" href="#video">Vidéo</a>
+      <a class="active" href="#footer">En savoir plus</a>
+    </nav>
+    <!--///////////////Section Accueil/////////////-->
+    <section id="accueil">
+      <h1>TP2</h1>
+      <h2>Sujet: BlackPink</h2>
+      <h3>Auteur: Leyna Feknous</h3>
+      <p>
+        BlackPink est un groupe de Kpop, style de musique coréen, formé par 4
+        membres qui sont, Jennie, Lisa, Rosé ainsi que Jisoo.
+      </p>
+      <p>
+        1W1 - Mise en page Web - Techniques d'intégration multimédia - Collège
+        de Maisonneuve
+      </p>
+      <a href="https://leyfa01.github.io" target="_blank" id="git">
+        https://leyfa01.github.io
+      </a>
+    </section>
+    <!--///////////////Section Inscription/////////////-->
+    <section id="inscription">
+      <h1>Inscription</h1>
+      <form class="formulaire" action="/action_page.php" target="_blank">
+        <div class="align1">
+          <label for="username">Surnom :</label>
+          <input type="text" name="username" id="username" />
+        </div>
+        <div class="align2">
+          <label for="email">Adresse Email :</label>
+          <input type="email" name="email" id="email" />
+        </div>
+        <div class="align3">
+          <label for="confirmation_email"
+            >Confirmation de l'adresse Email :</label
+          >
+          <input
+            type="email"
+            name="confirmation_email"
+            id="confirmation_email"
+          />
+        </div>
+        <div class="align4">
+          <label for="password">Mot de passe :</label>
+          <input type="password" name="password" id="password" />
+        </div>
+        <div class="align5">
+          <label for="password">Confirmation du mot de passe :</label>
+          <input
+            type="password"
+            name="confirmation_password"
+            id="confirmation_password"
+          />
+        </div>
+        <div class="genre">
+          <label for="homme_ou_femme">Genre :</label>
+          <label id="cadre" for="homme_ou_femme"
+            >Homme <input type="checkbox" name="Homme" id="homme_ou_femme"
+          /></label>
+          <label id="cadre" for="homme_ou_femme"
+            >Femme <input type="checkbox" name="Femme" id="homme_ou_femme"
+          /></label>
+        </div>
+        <div id="rang">
+          <label for="rang">Rang :</label>
+          <select name="Rang">
+            <option value="Basique">Basique</option>
+            <option value="Moyen">Moyen</option>
+            <option value="Fan">Fan</option>
+            <option value="VIP">VIP</option>
+            <option value="Blink">Blink</option>
+          </select>
+        </div>
+
+        <div>
+          <input type="reset" id="reset" value="Réintialiser" />
+          <input type="submit" id="submit" value="Soumettre" />
+        </div>
+      </form>
+    </section>
+    <!--///////////////Section Galerie/////////////-->
+    <section id="galerie">
+      <h1>Galerie des BlackPink</h1>
+      <figure class="fig__galerie">
+        <figure class="figure-solo">
+          <img src="images/jennie.png" alt="Jennie" />
+          <figcaption>Jennie Kim (Jennie)</figcaption>
+        </figure>
+        <figure class="figure-solo">
+          <img src="images/lisa.png" alt="Lisa" />
+          <figcaption>Pranpriya Manobal (Lisa)</figcaption>
+        </figure>
+        <figure class="figure-solo">
+          <img src="images/rosé.png" alt="Rosé" />
+          <figcaption>Roseanne Park (Rosé)</figcaption>
+        </figure>
+        <figure class="figure-solo">
+          <img src="images/jisoo.png" alt="Jisoo" />
+          <figcaption>Kim Ji Soo (Jisoo)</figcaption>
+        </figure>
+        <figure id="group" class="figure-solo">
+          <img src="images/blackpink.jpg" alt="BlackPink" />
+          <figcaption>Blackpink</figcaption>
+        </figure>
+      </figure>
+    </section>
+    <!--////////////////////Section Article/////////////////////-->
+    <section id="article">
+      <h1>Histoire des BlackPink</h1>
+      <!--  (article.principal>((section>(h1>lorem3)+(p>lorem))+figure>(img[src="images/img_$.jpg"]+figcaption>lorem3)))*4 -->
+      <article class="history1">
+        <div class="zone">
+          <h1 id="sc">Jennie</h1>
+          <p>
+            Jennie est une rappeuse, chanteuse, danseuse, mannequin, actrice,
+            parolière, auteur compositrice sud-coréenne. Jennie a été entrainée
+            chez YG Entertainment pendant 5 ans et 11 mois. Elle a intégré YG
+            Entertainment en 2010, mais n'a été présentée au public qu'en 2016,
+            dont elle est la rappeuse, chanteuse et danseuse
+          </p>
+        </div>
+        <figure>
+          <img height="100px" width="170px" src="images/jennie.gif" alt="" />
+        </figure>
+      </article>
+      <article class="history2">
+        <div class="zone">
+          <h1 id="sc">Lisa</h1>
+          <p>
+            Connue sous le nom de Lalisa, est une rappeuse et danseuse de K-pop
+            d'origine thaïlandaise. Elle commence à prendre des cours de danse à
+            l'âge de quatre ans, et participe souvent à des concours de danse.
+            Lisa est l'unique personne acceptée en Thaïlande lors de l'audition
+            du label sud-coréen YG Entertainment qui réunit 4 000 candidats, et
+            où elle arrive première du classement. Lisa rejoint le groupe
+            féminin sud-coréen Blackpink en 2016. Elle en devient la danseuse
+            principale, la rappeuse secondaire, ainsi qu'une vocaliste.
+          </p>
+        </div>
+        <figure>
+          <img height="140px" width="170px" src="images/lisa.gif" alt="" />
+        </figure>
+      </article>
+      <article class="history1">
+        <div class="zone">
+          <h1 id="sc">Rosé</h1>
+          <p>
+            Rosé est une chanteuse coréano-néo-zélandaise. En 2012, à l'âge de
+            15 ans, Rosé quitte son lycée pour aller s'entraîner avec le label
+            YG Entertainment à Séoul, en Corée du Sud, après avoir passé avec
+            succès des auditions en Australie. Le 29 juillet 2016, YG
+            Entertainment annonce officiellement la formation d'un nouveau girl
+            group se nommant Blackpink, elle devient la chanteuse principale
+            ainsi que l'une des danseuses du groupe.
+          </p>
+        </div>
+        <figure>
+          <img height="120px" width="170px" src="images/rosé.gif" alt="" />
+        </figure>
+      </article>
+      <article class="history2">
+        <div class="zone">
+          <h1 id="sc">Jisoo</h1>
+          <p>
+            Jisoo est une chanteuse, mannequin, actrice et parolière
+            sud-coréenne. Elle intègre en 2011, à l’âge de 16 ans, YG
+            Entertainment, une des trois maisons de disques coréennes
+            spécialisées dans le k-pop. C’est ainsi qu’apparaît en 2016 le
+            groupe Blackpink, dont elle est l’une des quatre membres, elle
+            devient la chanteuse secondaire, le visuelle, ainsi que l'une des
+            danseuses du groupe.
+          </p>
+        </div>
+        <figure>
+          <img height="130px" width="170px" src="images/jisoo.gif" alt="" />
+        </figure>
+      </article>
+    </section>
+
+    <section id="tableau">
+      <h1>Prix</h1>
+      <!--/////////////////////////////Section Prix///////////////////-->
+      <!--table>(tr>(td>lorem2)*3)*4-->
+      <table class="mon_tableau">
+        <caption>
+          Concert de BlackPink
+        </caption>
+        <thead>
+          <tr>
+            <th class="background">
+              <div>
+                <span class="bottom">Rang</span>
+                <span class="top">Lieu</span>
+                <div class="line"></div>
+              </div>
+            </th>
+            <th>Hamilton</th>
+            <th>New York</th>
+            <th>Londre</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Basic</th>
+            <td>100$</td>
+            <td>150$</td>
+            <td>220$</td>
+          </tr>
+          <tr>
+            <th>Medium</th>
+            <td>250$</td>
+            <td>300$</td>
+            <td>440$</td>
+          </tr>
+          <tr>
+            <th>Fan</th>
+            <td>300$</td>
+            <td>500$</td>
+            <td>650$</td>
+          </tr>
+          <tr>
+            <th>VIP</th>
+            <td>500$</td>
+            <td>700$</td>
+            <td>750$</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th>Blink</th>
+            <td>700$</td>
+            <td>1000$</td>
+            <td>900$</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+    <section id="video">
+      <h1>Vidéos favoris</h1>
+      <!--/////////////////////////Section Video/////////////////////////-->
+      <div class="figure">
+        <figure>
+          <figcaption id="vid-title">
+            Préparation de Blackpink pour leur World Tour
+          </figcaption>
+          <iframe
+            width="570"
+            height="305"
+            src="https://www.youtube.com/embed/ZPA37YESz2U"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          >
+          </iframe>
+          <figcaption>
+            Vidéo pratique de leur deuxième tournée mondiale de 2022
+          </figcaption>
+          <figcaption>
+            intitulée ''Born Pink'' qui est en cours depuis le 15 octobre 2022.
+          </figcaption>
+        </figure>
+        <figure>
+          <figcaption id="vid-title">Blackpink - Last Christmas</figcaption>
+          <iframe
+            width="570"
+            height="305"
+            src="https://www.youtube.com/embed/C-9_ZYALafE"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          >
+          </iframe>
+          <figcaption>
+            "Last christmas'' chanté par le groupe de BlackPink, à l'occasion de
+            Noël 2020.
+          </figcaption>
+        </figure>
+        <figure>
+          <figcaption id="vid-title">Blackpink - Shut Down</figcaption>
+          <iframe
+            width="570"
+            height="305"
+            src="https://www.youtube.com/embed/POe9SOEKotk"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          >
+          </iframe>
+          <figcaption>
+            Leur dernière clip vidéo sorti jusqu'à date a connu un grand succès,
+          </figcaption>
+          <figcaption>
+            19ème au niveau mondial sur Youtube en ce moment.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+    <!--//////////////////////////////Section Footer///////////////////////-->
+    <section id="footer">
+      <h3 id="Description">Description du département</h3>
+      <p>
+        Le département mène à un diplôme d’études collégiales permettant
+        d’acquérir les compétences pour travailler
+      </p>
+      <p>
+        dans l’univers du Web, des technologies mobiles, du jeu vidéo et des
+        médias numériques.
+      </p>
+
+      <h3 id="Adresse">Adresse</h3>
+      <div id="adresse">3800 R. Sherbrooke E, Montréal, QC H1X 2A2</div>
+
+      <h3>Liens importants</h3>
+
+      <div id="liens">
+        <a href="#accueil">Accueil,</a>
+        <a href="#inscription">Inscription,</a>
+        <a href="#galerie">Galerie,</a>
+        <a href="#article">Histoire,</a>
+        <a href="#tableau">Prix,</a>
+        <a href="#video">Vidéo,</a>
+        <a href="#footer">En savoir plus</a>
+      </div>
+
+      <h3 id="réseau">Réseaux Sociaux</h3>
+      <div id="réseaux">
+        <a
+          href="https://www.instagram.com/collegemaisonneuve/?hl=fr"
+          target="_blank"
+          ><img
+            width="40px"
+            height="40px"
+            id="social"
+            src="images/instagram_32.png"
+            alt=""
+        /></a>
+        <a href="https://www.facebook.com/CollegeMaisonneuve/" target="_blank"
+          ><img
+            width="40px"
+            height="40px"
+            id="social"
+            src="images/facebook_32.png"
+            alt=""
+        /></a>
+        <a
+          href="https://www.youtube.com/channel/UCIXtOLJmwNPBUuR-sGm7VSw"
+          target="_blank"
+          ><img
+            width="40px"
+            height="40px"
+            id="social"
+            src="images/youtube_32.png"
+            alt=""
+        /></a>
+      </div>
+
+      <div class="center">
+        <p>Avis de confidentialité | Privacy Notice</p>
+      </div>
+    </section>
+  </body>
+</html>
